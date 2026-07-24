@@ -1,0 +1,86 @@
+{
+  "name": "@scribemd-ai/mobile-sdk",
+  "version": "0.4.4",
+  "description": "Embeddable ScribeMD medical scribe for React Native: live transcription, clinical note generation, and a drop-in session UI",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node internal/module_scripts/build.js",
+    "clean": "node internal/module_scripts/clean.js",
+    "lint": "eslint src/",
+    "test": "node internal/module_scripts/test.js",
+    "prepare": "node internal/module_scripts/prepare.js",
+    "open:ios": "node internal/module_scripts/open-ios.js",
+    "open:android": "node internal/module_scripts/open-android.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "scribemd",
+    "medical-scribe",
+    "MicrophoneStream"
+  ],
+  "repository": "https://github.com/ParseDev/scribemd-mobile-sdk",
+  "bugs": {
+    "url": "https://github.com/ParseDev/scribemd-mobile-sdk/issues"
+  },
+  "author": "ScribeMD <dev@scribemd.ai> (https://scribemd.ai)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/ParseDev/scribemd-mobile-sdk#readme",
+  "dependencies": {
+    "@rails/actioncable": "^8.1.100",
+    "crypto-js": "^4.2.0",
+    "marked": "^18.0.6",
+    "turndown": "^7.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jest": "^29.2.1",
+    "@types/rails__actioncable": "^8.0.3",
+    "@types/react": "~19.1.1",
+    "@types/turndown": "^5.0.6",
+    "babel-preset-expo": "~55.0.8",
+    "eslint": "~9.39.4",
+    "eslint-config-universe": "^15.0.3",
+    "expo": "^57.0.2",
+    "jest": "^29.7.0",
+    "jest-expo": "~55.0.9",
+    "prettier": "^3.0.0",
+    "react-native": "0.82.1",
+    "typescript": "^5.9.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "peerDependencies": {
+    "@10play/tentap-editor": "*",
+    "expo": "*",
+    "expo-file-system": "*",
+    "expo-modules-core": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-webview": "*"
+  },
+  "peerDependenciesMeta": {
+    "react-native-safe-area-context": {
+      "optional": true
+    },
+    "expo-file-system": {
+      "optional": true
+    },
+    "@10play/tentap-editor": {
+      "optional": true
+    },
+    "react-native-webview": {
+      "optional": true
+    }
+  }
+}

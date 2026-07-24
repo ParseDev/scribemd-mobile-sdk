@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@scribemd-ai/mobile-sdk": ["../src/index"],
+      "@scribemd-ai/mobile-sdk/*": ["../src/*"]
+    }
+  }
+}
